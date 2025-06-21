@@ -1,0 +1,208 @@
+# Kaggle LLM Classification Fine-tuning - Git Ignore
+
+.claude
+.cursor
+
+# ========================================
+# Data Files (Large, should not be committed)
+# ========================================
+*.csv
+*.json
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+*.7z
+
+# Training data
+train.csv
+test.csv
+sample_submission.csv
+submission.csv
+
+# ========================================
+# Model Files (Large, regenerated during training)
+# ========================================
+*.pth
+*.pt
+*.bin
+*.safetensors
+best_model.*
+model_*.pth
+checkpoint-*
+pytorch_model.bin
+
+# Hugging Face cache
+.cache/
+transformers_cache/
+huggingface_hub/
+
+# ========================================
+# Python Environment
+# ========================================
+# Virtual environment
+venv/
+env/
+.env
+.venv
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ========================================
+# Jupyter Notebooks
+# ========================================
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter notebook outputs (optional - uncomment if you want clean notebooks)
+# */.ipynb_checkpoints/*
+
+# ========================================
+# IDE and Editor Files
+# ========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ========================================
+# Operating System Files
+# ========================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========================================
+# Logs and Temporary Files
+# ========================================
+*.log
+*.out
+*.err
+logs/
+temp/
+tmp/
+.tmp/
+
+# TensorBoard logs
+runs/
+tensorboard_logs/
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+
+# ========================================
+# Development and Testing
+# ========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# ========================================
+# Documentation (auto-generated)
+# ========================================
+docs/_build/
+site/
+
+# ========================================
+# Kaggle Specific
+# ========================================
+# Kaggle datasets (should be downloaded fresh)
+input/
+output/
+working/
+
+# Competition files that change
+leaderboard.csv
+*_submission_*.csv
+
+# ========================================
+# Keep These Files (Explicitly include important files)
+# ========================================
+# Core notebook file
+!llm_classification_finetuning.ipynb
+
+# Documentation
+!README.md
+!requirements.txt
+
+# Python scripts (if any core logic)
+!*.py
+
+# Configuration files
+!*.yml
+!*.yaml
+!*.toml
+!*.cfg
